@@ -3,7 +3,7 @@ $(document).readt(function (){              //will allow js to load fully before
 
     //Save Button
     $(".saveBtn").on("click", function(){ 
-            //get sibling element
+            //get sibling element, trim
         var value = $(this).siblings(".description").val().trim(); 
             //reference attribute associated  
         var time = $(this).parent().attr("id");
@@ -35,6 +35,8 @@ $(document).readt(function (){              //will allow js to load fully before
                 $(this).addClass("present");
             } 
             else {      //if current hour is not past or present, assign class of future
+                $(this).removeClass("past");
+                $(this).removeClass("present");
                 $(this).addClass("future");
             }
         })
