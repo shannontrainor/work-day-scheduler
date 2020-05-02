@@ -52,11 +52,10 @@ $(document).ready(function (){              //will allow js to load fully before
     $("#hour-2 .description").val(localStorage.getItem("hour-2"));    
     $("#hour-3 .description").val(localStorage.getItem("hour-3"));    
     $("#hour-4 .description").val(localStorage.getItem("hour-4"));    
-    $("#hour-5 .description").val(localStorage.getItem("hour-5"));   
-
-
-
+    $("#hour-5 .description").val(localStorage.getItem("hour-5")); 
+    
+    
+    //use moments to add current date
+    $('#currentDay').text(moment().format("dddd, MMMM Do"))
 
 })
-
-
