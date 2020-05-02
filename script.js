@@ -1,4 +1,4 @@
-$(document).readt(function (){              //will allow js to load fully before running
+$(document).ready(function (){              //will allow js to load fully before running
 
 
     //Save Button
@@ -43,8 +43,16 @@ $(document).readt(function (){              //will allow js to load fully before
     }
     updateHour();       //call function
 
-
-
+    //display text in input area by referencing parent ID & text area class
+    $("#hour-9 .description").val(localStorage.getItem("hour-9"));
+    $("#hour-10 .description").val(localStorage.getItem("hour-10"));
+    $("#hour-11 .description").val(localStorage.getItem("hour-11"));    
+    $("#hour-12 .description").val(localStorage.getItem("hour-12"));    
+    $("#hour-1 .description").val(localStorage.getItem("hour-1"));    
+    $("#hour-2 .description").val(localStorage.getItem("hour-2"));    
+    $("#hour-3 .description").val(localStorage.getItem("hour-3"));    
+    $("#hour-4 .description").val(localStorage.getItem("hour-4"));    
+    $("#hour-5 .description").val(localStorage.getItem("hour-5"));   
 
 
 
